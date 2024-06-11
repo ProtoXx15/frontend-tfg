@@ -11,7 +11,7 @@ const Login = () => {
     const [password, setPassword] = useState(''); // Estado para la contraseña
     const [error, setError] = useState(''); // Estado para el mensaje de error
 
-    const urlBase = 'http://localhost:8000/api/login/'; // URL base de la API para iniciar sesión
+    const urlBase = 'https://backend-tfg-production-144d.up.railway.app/api/login/'; // URL base de la API para iniciar sesión
 
     // Maneja el envío del formulario de inicio de sesión
     const handleLoginSubmit = (e) => {
