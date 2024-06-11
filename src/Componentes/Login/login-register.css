@@ -1,0 +1,19 @@
+/* Estilo para un fondo degradado */
+.gradient-custom-2 {
+    background: linear-gradient(to right, #ff8c00, #ffd700); /* Fondo degradado de naranja a amarillo */
+}
+
+@media (min-width: 768px) {
+    /* Estilo específico para pantallas con un ancho mínimo de 768px */
+    .gradient-form {
+        height: 100vh !important; /* Establece la altura del elemento con la clase 'gradient-form' al 100% del viewport */
+    }
+}
+
+@media (min-width: 769px) {
+    /* Estilo específico para pantallas con un ancho mínimo de 769px */
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem; /* Aplica un radio de borde superior derecho de 0.3 rem */
+        border-bottom-right-radius: .3rem; /* Aplica un radio de borde inferior derecho de 0.3 rem */
+    }
+}

@@ -1,0 +1,33 @@
+/* Estilo para la barra de la aplicación */
+.app {
+  width: 100%; /* Ancho del elemento al 100% */
+  position: sticky; /* Se mantiene pegado en la parte superior */
+  top: 0; /* Posición en la parte superior */
+  z-index: 100; /* Índice z para asegurarse de que esté sobre otros elementos */
+  background-color: rgba(197, 154, 102, 0.8); /* Color de fondo con transparencia */
+}
+
+/* Estilo para el toggle personalizado del dropdown */
+.customDropdownToggle {
+  background-color: rgba(255, 255, 255, 0.692); /* Color de fondo con transparencia */
+  border: 2px solid black; /* Borde sólido de 2px en color negro */
+}
+
+/* Estilo para el hover del toggle personalizado del dropdown */
+.customDropdownToggle:hover {
+  transition: .7s; /* Transición de 0.7 segundos */
+  background-color: rgba(255, 255, 255, 1); /* Color de fondo sin transparencia */
+}
+
+/* Estilo para los enlaces */
+.enlaces {
+  color: black; /* Color de texto negro */
+}
+
+/* Estilo para el hover de los enlaces */
+.enlaces:hover {
+  transition: .5s; /* Transición de 0.5 segundos */
+  color: black; /* Color de texto negro */
+  font-size: 1.1rem; /* Tamaño de fuente aumentado a 1.1rem */
+  padding: 5px 10px 5px 10px; /* Relleno modificado */
+}

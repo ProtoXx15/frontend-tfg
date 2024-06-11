@@ -1,0 +1,132 @@
+/* Estilos generales */
+
+body {
+    background-color: #f7eed6;
+}
+
+/* Estilos para el título principal */
+
+.titulazo {
+    font-family: sans-serif;
+    padding: 0 10%;
+}
+
+/* Estilos para las imágenes del carrusel */
+
+.imagendecarrusel {
+    height: 650px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover; /* Esto asegura que la imagen mantenga su proporción y se recorte si es necesario */
+}
+
+/* Estilos para las imágenes de las clases */
+
+.fotos-clases {
+    width: 100%;
+    height: 225px; /* Define una altura fija */
+    object-fit: cover; /* Hace que la imagen cubra el contenedor manteniendo la relación de aspecto */
+}
+
+/* Estilos para los formularios dentro de las tarjetas */
+
+.card form {
+    margin-bottom: 1rem;
+}
+
+/* Estilos para el contenedor principal */
+
+.contenedorprincipal {
+    padding: 8% 5% 0 8%;
+}
+
+/* Estilos para los textos del carrusel */
+
+.carousel-caption h5 {
+    font-size: 3rem; /* Ajusta el tamaño del texto del título */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-caption p {
+    font-size: 2rem; /* Ajusta el tamaño del texto del párrafo */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para el texto con color rojo */
+
+.colortext {
+    color: rgb(255, 0, 0);
+}
+
+/* Media query para dispositivos con ancho máximo de 768px */
+
+@media (max-width: 768px) {
+    .contenedorprincipal {
+        padding: 8% 5% 0 5%;
+    }
+    .contenedorprincipal img {
+        width: 50%;
+        height: 50%;
+        margin-left: 100px;
+    }
+}
+
+/* Estilos específicos para Home.css */
+
+.primercontenedor {
+    padding-top: 4rem;
+}
+
+.emoticono {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.featurette-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.featurette-divider {
+    margin: 3rem 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .fotomosaico {
+        display: none;
+    }
+    .textotablet {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .enlacepersonal {
+        margin: 1rem 0 1rem 0;
+    }
+    .featurette-divider {
+        margin: 2rem 0;
+    }
+}
+
+/* Media query para dispositivos con ancho menor a 768px */
+
+@media (width < 768px) {
+    .fotomosaico {
+        display: none;
+    }
+    .featurette-heading {
+        font-size: 1.5rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .featurette-divider {
+        margin: 2rem 0;
+    }
+}

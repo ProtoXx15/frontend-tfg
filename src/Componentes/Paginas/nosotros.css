@@ -1,0 +1,160 @@
+body {
+    background-color: #f7eed6;
+}
+
+/* Estilos para la sección "Quiénes somos" */
+.quienessomos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quienessomos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 3% 7% 3% 7%;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para los contenedores de perfil */
+.profile-container {
+    text-align: start;
+    width: 80%;
+    margin-top: 2%;
+}
+
+/* Estilos para la información del perfil */
+.profile-info {
+    margin-left: 3%;
+    width: 80%;
+    align-self: flex-start;
+}
+
+/* Estilos para las barras de progreso */
+.progress-bars {
+    margin-top: 20px;
+}
+
+/* Estilos específicos para las barras de progreso con fondo negro */
+.black-bar .progress-bar {
+    background-color: black !important;
+    height: 20px;
+    color: white !important;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-bar1 .progress-bar {
+    background-color: red !important;
+    height: 20px;
+    color: white !important;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-bar2 .progress-bar {
+    background-color: blue !important;
+    height: 20px;
+    color: white !important;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-bar3 .progress-bar {
+    background-color: green !important;
+    height: 20px;
+    color: white !important;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para las imágenes de perfil */
+.ajustefoto {
+    border-radius: 3%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.profile-image {
+    min-width:300px; 
+    width: 300px;
+    height: 300px;
+    border-radius: 4%;
+    border: 3px solid #000000;
+}
+
+/* Estilos para los contenedores de perfil */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+    padding: 20px; 
+    border-bottom: 1px solid #ccc; 
+}
+
+/* Estilos para flexbox */
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+/* Estilos para los contenedores de perfil */
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+/* Estilos para las barras de progreso */
+.progress-bars {
+    padding: 2%;
+    margin-top: 0px;
+    width: 80%;
+}
+
+/* Media query para pantallas de 1024px o más pequeñas */
+@media (max-width: 1023px) {
+    .quienessomos h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .quienessomos {
+        margin: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-info h3 {
+        text-align: center;
+    }
+    
+    .profile-info {
+        padding-left: 12%;
+        text-align:justify;
+    }
+    .profile-image {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
