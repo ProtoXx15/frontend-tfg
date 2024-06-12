@@ -13,7 +13,7 @@ const Perfil = () => {
 
     useEffect(() => {
         // Obtener los datos del usuario
-        axios.get('http://localhost:8000/api/detalles_usuario/', {
+        axios.get('https://backend-tfg-production-144d.up.railway.app/api/detalles_usuario/', {
             headers: { "Authorization": `Token ${localStorage.getItem("token")}` }
         })
             .then(response => {
@@ -26,7 +26,7 @@ const Perfil = () => {
             });
 
         // Obtener las reservas del usuario
-        axios.get('http://localhost:8000/api/verificar_reserva/', {
+        axios.get('https://backend-tfg-production-144d.up.railway.app/api/verificar_reserva/', {
             headers: { "Authorization": `Token ${localStorage.getItem("token")}` }
         })
             .then(response => {
@@ -48,7 +48,7 @@ const Perfil = () => {
     };
 
     const handleCancel = (selectedDia, selectedHorario, idClase) => {
-        axios.delete(`http://localhost:8000/api/cancelar_reserva/${selectedDia}/${selectedHorario}/${parseInt(idClase)}`, {
+        axios.delete(`https://backend-tfg-production-144d.up.railway.app/api/cancelar_reserva/${selectedDia}/${selectedHorario}/${parseInt(idClase)}`, {
             headers: { "Authorization": `Token ${localStorage.getItem("token")}` }
         })
             .then(() => {
@@ -61,7 +61,7 @@ const Perfil = () => {
 
 
     const handleEliminarCuenta = () => {
-        axios.delete('http://localhost:8000/api/delete/', {
+        axios.delete('https://backend-tfg-production-144d.up.railway.app/api/delete/', {
             headers: { "Authorization": `Token ${localStorage.getItem("token")}` }
         })
             .then(response => {

@@ -78,7 +78,7 @@ const Card = ({ h3, descripcion, image, hasForm, formData }) => {
 
     // Función para verificar el estado de la reserva
     const checkReservationStatus = (horario, dia) => {
-        axios.get("http://localhost:8000/api/verificar_reserva/", {
+        axios.get("https://backend-tfg-production-144d.up.railway.app/api/verificar_reserva/", {
             headers: { "Authorization": `Token ${localStorage.getItem("token")}` }
         })
             .then(response => {
@@ -100,7 +100,7 @@ const Card = ({ h3, descripcion, image, hasForm, formData }) => {
             return;
         }
         const data = { "clase": transformNombre(h3), "horario": selectedHorario, "fecha": selectedDia };
-        axios.post("http://localhost:8000/api/reservar_clase/", data, {
+        axios.post("https://backend-tfg-production-144d.up.railway.app/api/reservar_clase/", data, {
             headers: { "Authorization": `Token ${localStorage.getItem("token")}` }
         })
             .then(response => {
@@ -114,7 +114,7 @@ const Card = ({ h3, descripcion, image, hasForm, formData }) => {
 
     // Función para manejar la cancelación de una reserva
     const handleCancel = () => {
-        axios.delete(`http://localhost:8000/api/cancelar_reserva/${selectedDia}/${selectedHorario}/${transformNombre(h3)}`, {
+        axios.delete(`https://backend-tfg-production-144d.up.railway.app/api/cancelar_reserva/${selectedDia}/${selectedHorario}/${transformNombre(h3)}`, {
             headers: { "Authorization": `Token ${localStorage.getItem("token")}` }
         })
             .then(response => {

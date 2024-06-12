@@ -19,7 +19,7 @@ const Register = () => {
     const [passwordMatch, setPasswordMatch] = useState(true); // Estado para verificar coincidencia de contraseñas
     const [error, setError] = useState(''); // Estado para los mensajes de error
 
-    const urlRegister = 'http://localhost:8000/api/register/'; // URL de la API para registro
+    const urlRegister = 'https://backend-tfg-production-144d.up.railway.app/api/register/'; // URL de la API para registro
 
     // Maneja los cambios en los inputs del formulario
     const handleRegisterChange = (e) => {
