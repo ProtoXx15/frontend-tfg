@@ -100,6 +100,7 @@ const Card = ({ h3, descripcion, image, hasForm, formData }) => {
             return;
         }
         const data = { "clase": transformNombre(h3), "horario": selectedHorario, "fecha": selectedDia };
+        console.log("Reservation data:", data);  // Log the data being sent
         axios.post("https://backend-tfg-production-144d.up.railway.app/api/reservar_clase/", data, {
             headers: { "Authorization": `Token ${localStorage.getItem("token")}` }
         })
