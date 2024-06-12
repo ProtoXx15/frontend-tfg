@@ -22,7 +22,46 @@ const profiles = [
         "energía": 87,
         "paciencia": 65
     },
-    // Perfiles restantes aquí...
+    {
+        "name": "María González",
+        "title": "Musculación",
+        "description": "María González es una entrenadora de musculación comprometida y motivadora. Con su enfoque centrado en la forma correcta y el progreso constante, María ayuda a sus alumnos a alcanzar sus objetivos de acondicionamiento físico de manera segura y efectiva. Su energía contagiosa y su actitud positiva hacen que cada sesión de entrenamiento sea divertida y estimulante.",
+        "image": Maria,
+        "experiencia": 35,
+        "antigüedad": 20,
+        "energía": 99,
+        "paciencia": 75
+    },
+    {
+        "name": "Juan Perez",
+        "title": "Boxeo",
+        "description": "Juan Perez es un instructor apasionado de boxeo que inspira a sus alumnos con su dedicación y experiencia. Con un estilo de enseñanza enérgico y motivador, Juan guía a sus estudiantes a través de desafiantes sesiones de entrenamiento que los ayudan a mejorar su técnica y resistencia. Su entusiasmo por el boxeo crea un ambiente emocionante y motivador en cada clase.",
+        "image": Juan,
+        "experiencia": 99,
+        "antigüedad": 80,
+        "energía": 80,
+        "paciencia": 15
+    },
+    {
+        "name": "Pedro López",
+        "title": "Zumba",
+        "description": "Pedro López es un animado instructor de Zumba que trae alegría y energía a cada sesión de baile. Con su estilo divertido y sus coreografías enérgicas, Pedro hace que cada clase sea una fiesta llena de ritmo y diversión. Su pasión por la danza y el fitness se refleja en su compromiso con el éxito de sus alumnos, ayudándoles a alcanzar sus metas de acondicionamiento físico mientras se divierten.",
+        "image": Pedro,
+        "experiencia": 75,
+        "antigüedad": 70,
+        "energía": 80,
+        "paciencia": 90
+    },
+    {
+        "name": "Sofía Díaz",
+        "title": "Pilates",
+        "description": "Sofía Díaz es una maestra de Pilates que combina su juventud con un profundo conocimiento de la disciplina. Con un enfoque meticuloso en la técnica y la alineación corporal, Sofía ayuda a sus alumnos a fortalecer sus cuerpos y mejorar su postura. Aunque es joven, su compromiso con la excelencia y su paciencia inquebrantable hacen que sea una instructora excepcional para aquellos que buscan mejorar su salud y bienestar a través del Pilates.",
+        "image": Sofia,
+        "experiencia": 100,
+        "antigüedad": 100,
+        "energía": 60,
+        "paciencia": 98
+    },
 ];
 
 const Nosotros = () => {

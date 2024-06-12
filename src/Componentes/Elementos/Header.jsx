@@ -18,7 +18,7 @@ const Header = () => {
 
   // Función para manejar el cierre de sesión
   const handleLogout = () => {
-    axios.get('http://localhost:8000/api/logout', {
+    axios.get('https://backend-tfg-production-144d.up.railway.app/api/logout', {
       headers: {
         'Authorization': `Token ${localStorage.getItem('token')}`
       }
